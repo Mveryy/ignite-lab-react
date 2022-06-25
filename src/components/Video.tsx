@@ -24,7 +24,7 @@ export default function Video(props: VideoProps) {
   }
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 ">
       <div className="bg-black flex justify-center">
         <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
           <Player>
@@ -35,10 +35,10 @@ export default function Video(props: VideoProps) {
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+        <div className="flex items-start gap-16 sm:flex-col">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold ">{data.lesson.title}</h1>
-            <p className="mt-4 text-gray-200 leading-relaxed">{data.lesson.description}</p>
+            <h1 className="text-2xl font-bold sm:text-lg">{data.lesson.title}</h1>
+            <p className="mt-4 text-gray-200 leading-relaxed sm:text-sm sm:leading-6">{data.lesson.description}</p>
 
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
@@ -49,14 +49,14 @@ export default function Video(props: VideoProps) {
                 />
 
                 <div className="leading-relaxed">
-                  <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
-                  <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
+                  <strong className="font-bold text-2xl block sm:text-lg">{data.lesson.teacher.name}</strong>
+                  <span className="text-gray-200 text-sm block sm:text-sm sm:mt-1">{data.lesson.teacher.bio}</span>
                 </div>
               </div>
             )}
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 sm:w-full sm:mt-[-30px]">
             <a
               href=""
               className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
@@ -74,39 +74,39 @@ export default function Video(props: VideoProps) {
           </div>
         </div>
 
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 mt-20 sm:mt-16 grid grid-cols-2 sm:grid-cols-1 ">
           <a
             href=""
-            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
+            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors sm:h-36"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-green-700 h-full p-6 sm:p-4 flex items-center ">
               <FileArrowDown size={40} />
             </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Material Complementar</strong>
-              <p className="text-sm text-gray-200 mt-2">
+            <div className="py-4 leading-relaxed">
+              <strong className="text-2xl sm:text-lg">Material Complementar</strong>
+              <p className="text-sm text-gray-200 mt-2 sm:text-xs  ">
                 Acesse o material complementar para acelerar o seu conhecimento
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500">
               <CaretRight size={24} />
             </div>
           </a>
 
           <a
             href=""
-            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
+            className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors sm:h-36"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-green-700 h-full p-6 sm:p-4 flex items-center">
               <FileArrowDown size={40} />
             </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Wallpapers exclusivos</strong>
-              <p className="text-sm text-gray-200 mt-2">
+            <div className="py-4 leading-relaxed">
+              <strong className="text-2xl sm:text-lg">Wallpapers exclusivos</strong>
+              <p className="text-sm text-gray-200 mt-2 sm:text-xs">
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500">
               <CaretRight size={24} />
             </div>
           </a>
