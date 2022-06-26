@@ -84,11 +84,11 @@ export default function Video(props: VideoProps) {
             </div>
             <div className="py-4 leading-relaxed">
               <strong className="text-2xl sm:text-lg">Material Complementar</strong>
-              <p className="text-sm text-gray-200 mt-2 sm:text-xs  ">
+              <p className="text-sm text-gray-200 mt-2 sm:text-xs ">
                 Acesse o material complementar para acelerar o seu conhecimento
               </p>
             </div>
-            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500">
+            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500 sm:ml-[-12px]" >
               <CaretRight size={24} />
             </div>
           </a>
@@ -106,7 +106,7 @@ export default function Video(props: VideoProps) {
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
               </p>
             </div>
-            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500">
+            <div className="h-full p-6 sm:pr-2 sm:p-0 flex items-center text-blue-500 sm:ml-[-12px]">
               <CaretRight size={24} />
             </div>
           </a>
