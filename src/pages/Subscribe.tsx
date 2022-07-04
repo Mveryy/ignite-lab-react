@@ -74,7 +74,7 @@ export function Subscribe() {
 
 			<img src="/assets/mockup.png" className="mt-10 sm:w-[350px] sm:hidden" alt="" />
 
-			<img src="/assets/mockup-mobile.png" className="mt-10 sm:block sm:w-[362px] sm:mt-4 " alt="" />
+			<img src="/assets/mockup-mobile.png" className="mt-10 sm:block sm:w-screen sm:mt-4 hidden" alt="" />
 		</div>
 	);
 }
