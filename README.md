@@ -26,6 +26,15 @@ Uso e aplicação do Typescript, criação e consumo de API com GraphCMS e Graph
 -   Tailwind
 -   ApolloClient
 
+## Executando o projeto
+
+Pelo seu terminal navegue até a pasta do projeto e execute:
+
+```cl
+  npm install
+  npm run dev
+```
+
 ## Autores
 
 -   [@Mveryy](https://github.com/Mveryy)
