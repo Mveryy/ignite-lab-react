@@ -23,7 +23,6 @@ Uso e aplicação do Typescript, criação e consumo de API com GraphCMS e Graph
 -   React
 -   GraphQL
 -   GraphCMS
--   React
 -   Tailwind
 -   ApolloClient
 
